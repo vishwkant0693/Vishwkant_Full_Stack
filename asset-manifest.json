@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Vishwkant_Full_Stack/static/css/main.c708d6ff.css",
+    "main.js": "/Vishwkant_Full_Stack/static/js/main.4c6bbef1.js",
+    "static/js/787.b3a6b062.chunk.js": "/Vishwkant_Full_Stack/static/js/787.b3a6b062.chunk.js",
+    "index.html": "/Vishwkant_Full_Stack/index.html",
+    "main.c708d6ff.css.map": "/Vishwkant_Full_Stack/static/css/main.c708d6ff.css.map",
+    "main.4c6bbef1.js.map": "/Vishwkant_Full_Stack/static/js/main.4c6bbef1.js.map",
+    "787.b3a6b062.chunk.js.map": "/Vishwkant_Full_Stack/static/js/787.b3a6b062.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c708d6ff.css",
+    "static/js/main.4c6bbef1.js"
+  ]
+}
