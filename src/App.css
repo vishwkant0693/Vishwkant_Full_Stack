@@ -36,3 +36,146 @@
     transform: rotate(360deg);
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  margin-top: 150px;
+}
+
+#element {
+  color: skyblue;
+}
+
+.icons-div {
+  font-size: large;
+}
+
+.icons {
+  margin-top: 15px;
+  padding-top: 5px;
+  height: 30px;
+  width: 40px;
+}
+
+.section {
+  margin-top: 80px;
+}
+
+.qual-title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.qual-year {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bg_1 {
+  height: 400px;
+  width: 400px;
+  border-radius: 64% 36% 67% 33% / 37% 72% 28% 63%;
+  background-color: rgb(104, 15, 33);
+  position: absolute;
+  z-index: -99;
+  right: 0;
+}
+
+.bg_2 {
+  height: 350px;
+  width: 350px;
+  border-radius: 17% 83% 72% 28% / 21% 43% 57% 79%;
+  background-color: rgb(28, 3, 25);
+  position: absolute;
+  z-index: -79;
+  left: 0;
+}
+
+.bg_3 {
+  height: 400px;
+  width: 400px;
+  border-radius: 71% 29% 54% 46% / 37% 45% 55% 63%;
+  background-color: rgb(28, 9, 3);
+  position: absolute;
+  z-index: -90;
+  right: 0;
+}
+
+.projects_box {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: rgb(4, 17, 30, 0.3);
+  padding: 20px;
+}
+
+.header_box {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.projects_img {
+  object-fit: cover;
+  width: 13rem;
+  height: 38vh;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.skill_front {
+  border-radius: 10px;
+  background-color: rgb(46, 6, 23);
+  padding: 30px;
+}
+
+.skill_back {
+  border-radius: 10px;
+  background-color: rgb(85, 16, 45);
+  padding: 30px;
+}
+
+.skill_data {
+  border-radius: 10px;
+  background-color: rgb(16, 41, 85);
+  padding: 30px;
+}
+
+.skill_tech {
+  border-radius: 10px;
+  background-color: rgb(46, 6, 45);
+  padding: 30px;
+}
+
+.git_box {
+  border-radius: 20px;
+  background-color: #191c1f;
+  color: white;
+  padding: 40px;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
