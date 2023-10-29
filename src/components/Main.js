@@ -90,6 +90,7 @@ const Main = () => {
                     <div className="row mt-5">
                         <p className="col-md-6">Hello, I'm <b>Vishwkant</b> from Delhi, India. <br /> An aspiring full stack
                             developer.
+                            Currently student @ DUCAT Pitampura, 
                             I'm passionate about crafting web experiences
                             and thrive on problem-solving. When I'm not coding, I love to play/watch cricket and play FPS games
                             like CS,
@@ -109,7 +110,7 @@ const Main = () => {
                     <div className="container mt-5">
                         <h4 className="col-md-12 mt-4">Graduation<i className='bx bxs-graduation'></i></h4>
                         <h5 className="row qual">
-                            <div className="qual-title col-md-6">B.tech Mechatronics - DITE OKHLA PHASE - II, DELHI IP University
+                            <div className="qual-title col-md-6">B.tech (Mechatronics) - DITE OKHLA PHASE - II, DELHI [IP University]
                             </div>
                             <div className="qual-year col-md-6">2018-2023</div>
                             <hr  style={{textAlign: "center"}} />
