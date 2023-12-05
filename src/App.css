@@ -176,7 +176,7 @@ body {
 }
 
 .revealmainleft {
-  animation: slidein 1s ease-in;
+  animation: slidein 1.5s ease-in;
 }
 @keyframes slidein {
   0%{
@@ -190,7 +190,7 @@ body {
 }
 
 .revealmainright {
-  animation: slideinr 1s ease-in;
+  animation: slideinr 1.5s ease-in;
 }
 @keyframes slideinr {
   0%{
@@ -204,7 +204,7 @@ body {
 }
 
 .revealmainbottom {
-  animation: slideinb 1s ease-in;
+  animation: slideinb 1.5s ease-in;
 }
 @keyframes slideinb {
   0%{
