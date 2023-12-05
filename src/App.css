@@ -175,7 +175,81 @@ body {
   transition: all 1.5s ease;
 }
 
+.revealmainleft {
+  animation: slidein 1s ease-in;
+}
+@keyframes slidein {
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.revealmainright {
+  animation: slideinr 1s ease-in;
+}
+@keyframes slideinr {
+  0%{
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.revealmainbottom {
+  animation: slideinb 1s ease-in;
+}
+@keyframes slideinb {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.revealright {
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.revealleft {
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
 .reveal.active {
   transform: translateY(0px);
+  opacity: 1;
+}
+.revealmainright.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.revealmainleft.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.revealright.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.revealleft.active {
+  transform: translateX(0px);
   opacity: 1;
 }
