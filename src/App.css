@@ -176,6 +176,7 @@ body {
 }
 
 .revealmainleft {
+  overflow: hidden;
   animation: slidein 1.5s ease-in;
 }
 @keyframes slidein {
@@ -190,6 +191,7 @@ body {
 }
 
 .revealmainright {
+  overflow: hidden;
   animation: slideinr 1.5s ease-in;
 }
 @keyframes slideinr {
@@ -204,6 +206,7 @@ body {
 }
 
 .revealmainbottom {
+  overflow: hidden;
   animation: slideinb 1.5s ease-in;
 }
 @keyframes slideinb {
@@ -219,6 +222,7 @@ body {
 
 .revealright {
   position: relative;
+  overflow: hidden;
   transform: translateX(100px);
   opacity: 0;
   transition: all 1.5s ease;

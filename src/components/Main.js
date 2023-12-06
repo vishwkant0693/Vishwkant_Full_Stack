@@ -28,7 +28,7 @@ const Main = () => {
         for (var i = 0; i < revealsright.length; i++) {
             var windowheight = window.innerHeight;
             var revealtop = revealsright[i].getBoundingClientRect().top;
-            var revealpoint = 100;
+            var revealpoint = 80;
 
             if (revealtop < windowheight - revealpoint) {
                 revealsright[i].classList.add('active');
@@ -46,7 +46,7 @@ const Main = () => {
         for (var i = 0; i < revealsleft.length; i++) {
             var windowheight = window.innerHeight;
             var revealtop = revealsleft[i].getBoundingClientRect().top;
-            var revealpoint = 100;
+            var revealpoint = 80;
 
             if (revealtop < windowheight - revealpoint) {
                 revealsleft[i].classList.add('active');
