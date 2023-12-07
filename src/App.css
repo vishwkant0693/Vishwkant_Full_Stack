@@ -168,13 +168,6 @@ body {
   padding: 40px;
 }
 
-.reveal {
-  position: relative;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: all 1.5s ease;
-}
-
 .revealmainleft {
   overflow: hidden;
   animation: slidein 1.5s ease-in;
@@ -191,7 +184,7 @@ body {
 }
 
 .revealmainright {
-  overflow: hidden;
+  overflow-x: hidden;
   animation: slideinr 1.5s ease-in;
 }
 @keyframes slideinr {
@@ -220,40 +213,14 @@ body {
   }
 }
 
-.revealright {
+.reveal {
   position: relative;
-  overflow: hidden;
-  transform: translateX(100px);
+  transform: translateY(-60px);
   opacity: 0;
-  transition: all 1.5s ease;
-}
-
-.revealleft {
-  position: relative;
-  transform: translateX(-100px);
-  opacity: 0;
-  transition: all 1.5s ease;
+  transition: all 1.2s ease;
 }
 
 .reveal.active {
   transform: translateY(0px);
-  opacity: 1;
-}
-.revealmainright.active {
-  transform: translateX(0px);
-  opacity: 1;
-}
-.revealmainleft.active {
-  transform: translateX(0px);
-  opacity: 1;
-}
-
-.revealright.active {
-  transform: translateX(0px);
-  opacity: 1;
-}
-
-.revealleft.active {
-  transform: translateX(0px);
   opacity: 1;
 }

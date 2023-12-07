@@ -20,42 +20,7 @@ const Main = () => {
             }
         }
     }
-    window.addEventListener('scroll', revealright);
-
-    function revealright() {
-        var revealsright = document.querySelectorAll('.revealright');
-
-        for (var i = 0; i < revealsright.length; i++) {
-            var windowheight = window.innerHeight;
-            var revealtop = revealsright[i].getBoundingClientRect().top;
-            var revealpoint = 80;
-
-            if (revealtop < windowheight - revealpoint) {
-                revealsright[i].classList.add('active');
-            }
-            else {
-                revealsright[i].classList.remove('active');
-            }
-        }
-    }
-    window.addEventListener('scroll', revealleft);
-
-    function revealleft() {
-        var revealsleft = document.querySelectorAll('.revealleft');
-
-        for (var i = 0; i < revealsleft.length; i++) {
-            var windowheight = window.innerHeight;
-            var revealtop = revealsleft[i].getBoundingClientRect().top;
-            var revealpoint = 80;
-
-            if (revealtop < windowheight - revealpoint) {
-                revealsleft[i].classList.add('active');
-            }
-            else {
-                revealsleft[i].classList.remove('active');
-            }
-        }
-    }
+    
     return (
         <>
             <header>
@@ -124,7 +89,7 @@ const Main = () => {
                 <h2 className="text-center mb-5 reveal">About Me</h2>
                 <div className="container">
                     <div className="row mt-5">
-                        <p className="col-md-6 revealleft">Hello, I'm <b>Vishwkant</b> from Delhi, India. <br /> An aspiring full stack
+                        <p className="col-md-6 reveal">Hello, I'm <b>Vishwkant</b> from Delhi, India. <br /> An aspiring full stack
                             developer.
                             Currently student @ DUCAT Pitampura,
                             I'm passionate about crafting web experiences
@@ -132,7 +97,7 @@ const Main = () => {
                             like CS,
                             Valorant. Let's connect and create something remarkable together.
                         </p>
-                        <div className="col-md-6 text-center revealright">
+                        <div className="col-md-6 text-center reveal">
                             <img src="images/profile.png" style={{ width: "10rem" }} alt="" />
                         </div>
                     </div>
@@ -144,23 +109,23 @@ const Main = () => {
             <section className="section reveal">
                 <h2 className="text-center mb-5">Qualification</h2>
                 <div className="container mt-5">
-                    <h4 className="col-md-12 mt-4 revealleft">Graduation<i className='bx bxs-graduation'></i></h4>
+                    <h4 className="col-md-12 mt-4 reveal">Graduation<i className='bx bxs-graduation'></i></h4>
                     <h5 className="row qual">
-                        <div className="qual-title col-md-6 revealleft">B.tech (Mechatronics) - DITE OKHLA PHASE - II, DELHI [IP University]
+                        <div className="qual-title col-md-6 reveal">B.tech (Mechatronics) - DITE OKHLA PHASE - II, DELHI [IP University]
                         </div>
-                        <div className="qual-year col-md-6 revealright">2018-2023</div>
+                        <div className="qual-year col-md-6 reveal">2018-2023</div>
                         <hr style={{ textAlign: "center" }} />
                     </h5>
-                    <h4 className="col-md-12 mt-4 revealleft">Class XII <i className='bx bxs-school'></i></h4>
+                    <h4 className="col-md-12 mt-4 reveal">Class XII <i className='bx bxs-school'></i></h4>
                     <h5 className="row">
-                        <div className="qual-title col-md-6 revealleft">CBSE BOARD - RSBV Kalyanpuri</div>
-                        <div className="qual-year col-md-6 revealright">2018</div>
+                        <div className="qual-title col-md-6 reveal">CBSE BOARD - RSBV Kalyanpuri</div>
+                        <div className="qual-year col-md-6 reveal">2018</div>
                         <hr style={{ textAlign: "center" }} />
                     </h5>
-                    <h4 className="col-md-12 mt-4 revealleft">Class X <i className='bx bxs-school'></i></h4>
+                    <h4 className="col-md-12 mt-4 reveal">Class X <i className='bx bxs-school'></i></h4>
                     <h5 className="row">
-                        <div className="qual-title col-md-6 revealleft">CBSE BOARD - RSBV Kondli</div>
-                        <div className="qual-year col-md-6 revealright">2015</div>
+                        <div className="qual-title col-md-6 reveal">CBSE BOARD - RSBV Kondli</div>
+                        <div className="qual-year col-md-6 reveal">2015</div>
                         <hr style={{ textAlign: "center" }} />
                     </h5>
                     <div className="bg_2"></div>
@@ -172,7 +137,7 @@ const Main = () => {
             <section className="section reveal">
                 <h2 className="text-center mb-5">Projects</h2>
                 <div className="container">
-                    <div className="row projects_box my-5 revealright">
+                    <div className="row projects_box my-5 reveal">
                         <div className="col-md-9">
                             <h4>NewsApp - ReactJs</h4>
                             <p><span style={{ color: 'crimson' }}>NewsApp :</span> It is a ReactJS web application that fetches and
@@ -186,7 +151,7 @@ const Main = () => {
                             style={{ background: "url(images/newsapp1.png)", backgroundSize: "cover", borderRadius: "10px", boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)" }}>
                         </div>
                     </div>
-                    <div className="row projects_box my-5 revealleft">
+                    <div className="row projects_box my-5 reveal">
                         <div className="col-md-3"
                             style={{ background: "url(images/chatapp1.png)", backgroundSize: "cover", borderRadius: "10px", boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)" }}>
                         </div>
@@ -199,7 +164,7 @@ const Main = () => {
                             <a href="https://github.com/vishwkant0693/React-CRUD-Operations"><i className='bx bx-code-alt'></i>Code</a>
                         </div>
                     </div>
-                    <div className="row projects_box my-5 revealright">
+                    <div className="row projects_box my-5 reveal">
                         <div className="col-md-9">
                             <h4>FabWallpaper - ReactJs</h4>
                             <p><span style={{ color: 'crimson' }}>FabWallpaper :</span> ReactJS app leverages Json/APIs to deliver a
@@ -213,7 +178,7 @@ const Main = () => {
                             style={{ background: "url(images/fabwall1.png)", backgroundSize: "cover", borderRadius: "10px", boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)" }}>
                         </div>
                     </div>
-                    <div className="row projects_box my-5 revealleft">
+                    <div className="row projects_box my-5 reveal">
                         <div className="col-md-3"
                             style={{ background: "url(images/reactcrud1.png)", backgroundSize: "cover", borderRadius: "10px", boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)" }}>
                         </div>
@@ -226,7 +191,7 @@ const Main = () => {
                             <a href="https://github.com/vishwkant0693/React-CRUD-Operations"><i className='bx bx-code-alt'></i>Code</a>
                         </div>
                     </div>
-                    <div className="row projects_box my-5 revealright">
+                    <div className="row projects_box my-5 reveal">
                         <div className="col-md-9">
                             <h4>Django CRUD Operations</h4>
                             <p>CRUD operations in Django, a Python web framework, enable the creation, reading, updating, and
@@ -249,8 +214,8 @@ const Main = () => {
                 <h2 className="text-center mb-5">Skills</h2>
                 <div className="container">
                     <div className="row text-center">
-                        <div className="col-md-3 skill_front revealleft">
-                            <h3>FrontEnd Skills</h3>
+                        <div className="col-md-3 skill_front reveal">
+                            <h3>FrontEnd</h3>
                             <hr />
                             <p>HTML</p>
                             <p>CSS</p>
@@ -260,7 +225,7 @@ const Main = () => {
 
                         </div>
                         <div className="col-md-3 skill_back reveal">
-                            <h3>BackEnd Skills</h3>
+                            <h3>BackEnd</h3>
                             <hr />
                             <p>Python</p>
                             <p>Django</p>
@@ -274,7 +239,7 @@ const Main = () => {
                             <p>MySQL</p>
                             <p>MongoDB</p>
                         </div>
-                        <div className="col-md-3 skill_tech revealright">
+                        <div className="col-md-3 skill_tech reveal">
                             <h3>Technologies</h3>
                             <hr />
                             <p>VS Code</p>
