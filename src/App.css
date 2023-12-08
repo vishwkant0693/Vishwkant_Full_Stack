@@ -1,41 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -175,12 +137,14 @@ body {
   overflow: hidden;
   animation: slidein 1.2s ease-in;
 }
+
 @keyframes slidein {
-  0%{
+  0% {
     transform: translateX(-100px);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateX(0px);
     opacity: 1;
   }
@@ -190,12 +154,14 @@ body {
   overflow-x: hidden;
   animation: slideinr 1.2s ease-in;
 }
+
 @keyframes slideinr {
-  0%{
+  0% {
     transform: translateX(100px);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateX(0px);
     opacity: 1;
   }
@@ -205,12 +171,14 @@ body {
   overflow: hidden;
   animation: slideinb 1.2s ease-in;
 }
+
 @keyframes slideinb {
-  0%{
+  0% {
     transform: translateY(100px);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -230,7 +198,7 @@ body {
 
 @keyframes move {
   100% {
-      transform: translate3d(0, 0, 1px) rotate(360deg);
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 
@@ -267,6 +235,7 @@ body {
   transform-origin: -22vw -3vh;
   box-shadow: 24vmin 0 3.181749617124895vmin currentColor;
 }
+
 .background span:nth-child(1) {
   color: #1c0903;
   top: 14%;
@@ -276,6 +245,7 @@ body {
   transform-origin: -15vw -23vh;
   box-shadow: -24vmin 0 3.2550007656698936vmin currentColor;
 }
+
 .background span:nth-child(2) {
   color: #1c0319;
   top: 92%;
@@ -285,6 +255,7 @@ body {
   transform-origin: 2vw 0vh;
   box-shadow: 24vmin 0 3.4706762445885984vmin currentColor;
 }
+
 .background span:nth-child(3) {
   color: #1c0319;
   top: 46%;
@@ -294,6 +265,7 @@ body {
   transform-origin: -10vw -16vh;
   box-shadow: 24vmin 0 3.3133713231617596vmin currentColor;
 }
+
 .background span:nth-child(4) {
   color: #1c0903;
   top: 31%;
@@ -303,6 +275,7 @@ body {
   transform-origin: -4vw 22vh;
   box-shadow: -24vmin 0 3.0417881670278284vmin currentColor;
 }
+
 .background span:nth-child(5) {
   color: #1c0319;
   top: 5%;
@@ -312,6 +285,7 @@ body {
   transform-origin: -24vw -9vh;
   box-shadow: 24vmin 0 3.4999745109761893vmin currentColor;
 }
+
 .background span:nth-child(6) {
   color: #1c0903;
   top: 25%;
@@ -321,6 +295,7 @@ body {
   transform-origin: 25vw 11vh;
   box-shadow: 24vmin 0 3.8051525969335644vmin currentColor;
 }
+
 .background span:nth-child(7) {
   color: #1c0903;
   top: 12%;
@@ -330,6 +305,7 @@ body {
   transform-origin: 21vw 1vh;
   box-shadow: -24vmin 0 3.516470422006911vmin currentColor;
 }
+
 .background span:nth-child(8) {
   color: #1c0903;
   top: 39%;
@@ -339,6 +315,7 @@ body {
   transform-origin: 9vw -11vh;
   box-shadow: 24vmin 0 3.355770196688547vmin currentColor;
 }
+
 .background span:nth-child(9) {
   color: #1c0319;
   top: 56%;
@@ -348,6 +325,7 @@ body {
   transform-origin: -24vw 7vh;
   box-shadow: -24vmin 0 3.19896108714046vmin currentColor;
 }
+
 .background span:nth-child(10) {
   color: #1c0903;
   top: 89%;
@@ -357,6 +335,7 @@ body {
   transform-origin: 9vw -11vh;
   box-shadow: -24vmin 0 3.647175890012309vmin currentColor;
 }
+
 .background span:nth-child(11) {
   color: #1c0903;
   top: 37%;
@@ -366,6 +345,7 @@ body {
   transform-origin: -11vw 14vh;
   box-shadow: 24vmin 0 3.96042030579438vmin currentColor;
 }
+
 .background span:nth-child(12) {
   color: #1c0319;
   top: 78%;
@@ -375,6 +355,7 @@ body {
   transform-origin: -23vw -14vh;
   box-shadow: -24vmin 0 3.7363095889590223vmin currentColor;
 }
+
 .background span:nth-child(13) {
   color: #1c0319;
   top: 39%;
@@ -384,6 +365,7 @@ body {
   transform-origin: -17vw 22vh;
   box-shadow: 24vmin 0 3.18259202286312vmin currentColor;
 }
+
 .background span:nth-child(14) {
   color: #1c0903;
   top: 70%;
@@ -393,6 +375,7 @@ body {
   transform-origin: 24vw 10vh;
   box-shadow: -24vmin 0 3.31635952334389vmin currentColor;
 }
+
 .background span:nth-child(15) {
   color: #6b0015;
   top: 20%;
@@ -402,6 +385,7 @@ body {
   transform-origin: -3vw -3vh;
   box-shadow: -24vmin 0 3.5456292080616407vmin currentColor;
 }
+
 .background span:nth-child(16) {
   color: #1c0903;
   top: 25%;
@@ -411,6 +395,7 @@ body {
   transform-origin: -6vw -17vh;
   box-shadow: -24vmin 0 3.640347462288052vmin currentColor;
 }
+
 .background span:nth-child(17) {
   color: #1c0903;
   top: 63%;
@@ -420,6 +405,7 @@ body {
   transform-origin: 24vw -7vh;
   box-shadow: 24vmin 0 3.4790231404049408vmin currentColor;
 }
+
 .background span:nth-child(18) {
   color: #1c0319;
   top: 74%;
@@ -429,6 +415,7 @@ body {
   transform-origin: 25vw 17vh;
   box-shadow: -24vmin 0 3.274769595078801vmin currentColor;
 }
+
 .background span:nth-child(19) {
   color: #1c0319;
   top: 92%;

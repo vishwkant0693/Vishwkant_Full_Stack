@@ -1,5 +1,5 @@
 import { Axios } from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 const Main = () => {
@@ -22,6 +22,28 @@ const Main = () => {
         }
 
     }
+
+
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.scrollY;
+
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [prevScrollPos]);
+
+
     const [formData, setFormData] = useState({
         fullname: '',
         email: '',
@@ -49,9 +71,18 @@ const Main = () => {
 
     return (
         <>
-            <header>
-                <nav className="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
-                    <div className="container-fluid fixed-top header_box" style={{ height: "50px" }}>
+            <header style={{
+                position: 'fixed',
+                top: '0',
+                width: '100%',
+                color:'white',
+                padding: '20px 0',
+                zIndex: '1000',
+                transform: visible ? 'translateY(0)' : 'translateY(-100%)',
+                transition: 'transform 0.3s ease-in-out',
+            }}>
+                <nav className="navbar navbar-expand-lg bg-black" id='navbar' data-bs-theme="dark">
+                    <div className="container-fluid fixed-top header_box">
                         <a className="navbar-brand" href='#'><span style={{ color: "rgb(165, 139, 213)" }}>V</span>ishwkant.</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -312,17 +343,17 @@ const Main = () => {
                         <div className="mb-3">
                             <label htmlFor="FormControlInput1" className="form-label">Full Name</label>
                             <input type="fullname" name='fullname' className="form-control" value={formData.fullname} onChange={handleInputChange}
-                                style={{ backgroundColor: "transparent", color: "whitesmoke" }} id="FormInput1" />
+                                style={{background:'rgb(25, 25, 29)',color:'white'}} id="FormInput1" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="FormControlInput2" className="form-label">Email address</label>
                             <input type="email" name='email' className="form-control" value={formData.email} onChange={handleInputChange}
-                                style={{ backgroundColor: "transparent", color: "whitesmoke" }} id="FormInput2" />
+                                style={{background:'rgb(25, 25, 29)',color:'white'}} id="FormInput2" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
                             <textarea className="form-control" name='message' id="FormMessage" value={formData.message} onChange={handleInputChange}
-                                style={{ backgroundColor: "transparent", color: "whitesmoke" }} rows="5"></textarea>
+                                style={{background:'rgb(25, 25, 29)',color:'white'}} rows="5"></textarea>
                         </div>
                         <div className="d-grid gap-2 mt-4">
                             <button className="btn btn-outline-info">Send</button>
@@ -334,7 +365,7 @@ const Main = () => {
             {/* <!-- Footer --> */}
             <hr style={{ marginTop: "142px" }} id="getintouch" />
             <section>
-                <div className="container-fluid text-center">
+                <div className="container-fluid text-center footer_box">
                     <h2 className="title">Vishwkant</h2>
                     <p>Full Stack Developer</p>
                     <div>
