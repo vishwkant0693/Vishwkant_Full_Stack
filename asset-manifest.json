@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Vishwkant_Full_Stack/static/css/main.b1de163c.css",
-    "main.js": "/Vishwkant_Full_Stack/static/js/main.42c88df0.js",
+    "main.css": "/Vishwkant_Full_Stack/static/css/main.e38129fc.css",
+    "main.js": "/Vishwkant_Full_Stack/static/js/main.2723be2a.js",
     "static/js/787.b3a6b062.chunk.js": "/Vishwkant_Full_Stack/static/js/787.b3a6b062.chunk.js",
     "index.html": "/Vishwkant_Full_Stack/index.html",
-    "main.b1de163c.css.map": "/Vishwkant_Full_Stack/static/css/main.b1de163c.css.map",
-    "main.42c88df0.js.map": "/Vishwkant_Full_Stack/static/js/main.42c88df0.js.map",
+    "main.e38129fc.css.map": "/Vishwkant_Full_Stack/static/css/main.e38129fc.css.map",
+    "main.2723be2a.js.map": "/Vishwkant_Full_Stack/static/js/main.2723be2a.js.map",
     "787.b3a6b062.chunk.js.map": "/Vishwkant_Full_Stack/static/js/787.b3a6b062.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1de163c.css",
-    "static/js/main.42c88df0.js"
+    "static/css/main.e38129fc.css",
+    "static/js/main.2723be2a.js"
   ]
 }
