@@ -66,8 +66,8 @@ const Main = () => {
                             />
                         </span>
                     </h2>
-                    <div className="col-md-4 m-auto p-3 revealmainright">
-                        <img src="images/home.png" style={{ width: "100%" }} alt="" />
+                    <div className="col-md-4 m-auto p-3">
+                        <img src="images/home.png" className="revealmainright" style={{ width: "100%" }} alt="" />
                     </div>
                 </div>
             </section>
@@ -86,10 +86,10 @@ const Main = () => {
             {/* <!-- About --> */}
             <hr style={{ marginTop: "142px" }} id="about" />
             <section className="section">
-                <h2 className="text-center mb-5 reveal">About Me</h2>
+                <h2 className="text-center mb-5">About Me</h2>
                 <div className="container">
                     <div className="row mt-5">
-                        <p className="col-md-6 reveal">Hello, I'm <b>Vishwkant</b> from Delhi, India. <br /> An aspiring full stack
+                        <p className="col-md-6">Hello, I'm <b>Vishwkant</b> from Delhi, India. <br /> An aspiring full stack
                             developer.
                             Currently student @ DUCAT Pitampura,
                             I'm passionate about crafting web experiences
@@ -97,7 +97,7 @@ const Main = () => {
                             like CS,
                             Valorant. Let's connect and create something remarkable together.
                         </p>
-                        <div className="col-md-6 text-center reveal">
+                        <div className="col-md-6 text-center">
                             <img src="images/profile.png" style={{ width: "10rem" }} alt="" />
                         </div>
                     </div>
@@ -106,26 +106,26 @@ const Main = () => {
 
             {/* <!-- Qualification --> */}
             <hr style={{ marginTop: "142px" }} id="qualification" />
-            <section className="section reveal">
+            <section className="section">
                 <h2 className="text-center mb-5">Qualification</h2>
                 <div className="container mt-5">
-                    <h4 className="col-md-12 mt-4 reveal">Graduation<i className='bx bxs-graduation'></i></h4>
+                    <h4 className="col-md-12 mt-4">Graduation<i className='bx bxs-graduation'></i></h4>
                     <h5 className="row qual">
-                        <div className="qual-title col-md-6 reveal">B.tech (Mechatronics) - DITE OKHLA PHASE - II, DELHI [IP University]
+                        <div className="qual-title col-md-6">B.tech (Mechatronics) - DITE OKHLA PHASE - II, DELHI [IP University]
                         </div>
-                        <div className="qual-year col-md-6 reveal">2018-2023</div>
+                        <div className="qual-year col-md-6">2018-2023</div>
                         <hr style={{ textAlign: "center" }} />
                     </h5>
-                    <h4 className="col-md-12 mt-4 reveal">Class XII <i className='bx bxs-school'></i></h4>
+                    <h4 className="col-md-12 mt-4">Class XII <i className='bx bxs-school'></i></h4>
                     <h5 className="row">
-                        <div className="qual-title col-md-6 reveal">CBSE BOARD - RSBV Kalyanpuri</div>
-                        <div className="qual-year col-md-6 reveal">2018</div>
+                        <div className="qual-title col-md-6">CBSE BOARD - RSBV Kalyanpuri</div>
+                        <div className="qual-year col-md-6">2018</div>
                         <hr style={{ textAlign: "center" }} />
                     </h5>
-                    <h4 className="col-md-12 mt-4 reveal">Class X <i className='bx bxs-school'></i></h4>
+                    <h4 className="col-md-12 mt-4">Class X <i className='bx bxs-school'></i></h4>
                     <h5 className="row">
-                        <div className="qual-title col-md-6 reveal">CBSE BOARD - RSBV Kondli</div>
-                        <div className="qual-year col-md-6 reveal">2015</div>
+                        <div className="qual-title col-md-6">CBSE BOARD - RSBV Kondli</div>
+                        <div className="qual-year col-md-6">2015</div>
                         <hr style={{ textAlign: "center" }} />
                     </h5>
                     <div className="bg_2"></div>
@@ -134,7 +134,7 @@ const Main = () => {
 
             {/* <!-- Projects --> */}
             <hr style={{ marginTop: "142px" }} id="projects" />
-            <section className="section reveal">
+            <section className="section">
                 <h2 className="text-center mb-5">Projects</h2>
                 <div className="container">
                     <div className="row projects_box my-5 reveal">
@@ -210,11 +210,11 @@ const Main = () => {
             {/* <!-- Skills --> */}
             <div className="bg_3"></div>
             <hr style={{ marginTop: "142px" }} id="skills" />
-            <section className="section reveal">
+            <section className="section">
                 <h2 className="text-center mb-5">Skills</h2>
                 <div className="container">
                     <div className="row text-center">
-                        <div className="col-md-3 skill_front reveal">
+                        <div className="col-md-3 skill_front">
                             <h3>FrontEnd</h3>
                             <hr />
                             <p>HTML</p>
@@ -224,7 +224,7 @@ const Main = () => {
                             <p>ReactJS</p>
 
                         </div>
-                        <div className="col-md-3 skill_back reveal">
+                        <div className="col-md-3 skill_back">
                             <h3>BackEnd</h3>
                             <hr />
                             <p>Python</p>
@@ -233,13 +233,13 @@ const Main = () => {
                             <p>ExpressJS</p>
 
                         </div>
-                        <div className="col-md-3 skill_data reveal">
+                        <div className="col-md-3 skill_data">
                             <h3>Databases</h3>
                             <hr />
                             <p>MySQL</p>
                             <p>MongoDB</p>
                         </div>
-                        <div className="col-md-3 skill_tech reveal">
+                        <div className="col-md-3 skill_tech">
                             <h3>Technologies</h3>
                             <hr />
                             <p>VS Code</p>
@@ -253,9 +253,9 @@ const Main = () => {
 
             {/* <!-- Get in touch --> */}
             <hr style={{ marginTop: "142px" }} id="getintouch" />
-            <section className="section reveal">
+            <section className="section">
                 <h2 className="text-center mb-5">Get In Touch</h2>
-                <div className="container git_box reveal">
+                <div className="container git_box">
                     <form action="" method='post'>
                         <div className="mb-3">
                             <label htmlFor="FormControlInput1" className="form-label">Full Name</label>
