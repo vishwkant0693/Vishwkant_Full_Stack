@@ -1,4 +1,5 @@
-import React from 'react'
+import { Axios } from 'axios';
+import React, { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 const Main = () => {
@@ -19,8 +20,33 @@ const Main = () => {
                 reveals[i].classList.remove('active');
             }
         }
+
     }
-    
+    const [formData, setFormData] = useState({
+        fullname: '',
+        email: '',
+        message: '',
+    })
+
+    const handleInputChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log(formData);
+        try {
+            const response = await Axios.post('https://', formData);
+            console.log(response.data);
+            // Additional actions based on the server response
+        } catch (error) {
+            console.error('Error saving data:', error);
+        }
+    };
+
+
     return (
         <>
             <header>
@@ -46,9 +72,33 @@ const Main = () => {
                 </nav>
             </header>
 
+            {/* Background */}
+            <div class="background">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
 
             {/* <!-- Main --> */}
-            <section className="container main bg-black d-flex justify-content-around" style={{ height: "48vh" }} id="">
+            <section className="container main d-flex justify-content-around" style={{ height: "48vh" }} id="">
                 <div className="row">
                     <h2 className="col-md-8 m-auto p-3 revealmainleft">
                         Hi, My name is <br /><span style={{ color: "purple" }}>Vishwkant,</span>
@@ -82,6 +132,8 @@ const Main = () => {
                     <button className="btn btn-info">Download Resume</button>
                 </div>
             </div>
+
+
 
             {/* <!-- About --> */}
             <hr style={{ marginTop: "142px" }} id="about" />
@@ -255,26 +307,25 @@ const Main = () => {
             <hr style={{ marginTop: "142px" }} id="getintouch" />
             <section className="section">
                 <h2 className="text-center mb-5">Get In Touch</h2>
-                <div className="container git_box">
-                    <form action="" method='post'>
+                <div className="container git_box bg-black">
+                    <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label htmlFor="FormControlInput1" className="form-label">Full Name</label>
-                            <input type="fullname" name='fullname' className="form-control"
-                                style={{ backgroundColor: "#343a40", color: "whitesmoke" }} id="FormInput1" placeholder="Full Name" />
+                            <input type="fullname" name='fullname' className="form-control" value={formData.fullname} onChange={handleInputChange}
+                                style={{ backgroundColor: "transparent", color: "whitesmoke" }} id="FormInput1" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="FormControlInput2" className="form-label">Email address</label>
-                            <input type="email" name='emailid' className="form-control"
-                                style={{ backgroundColor: "#343a40", color: "whitesmoke" }} id="FormInput2"
-                                placeholder="Email address" />
+                            <input type="email" name='email' className="form-control" value={formData.email} onChange={handleInputChange}
+                                style={{ backgroundColor: "transparent", color: "whitesmoke" }} id="FormInput2" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
-                            <textarea className="form-control" name='message' placeholder="Message" id="FormMessage"
-                                style={{ backgroundColor: "#343a40", color: "whitesmoke" }} rows="5"></textarea>
+                            <textarea className="form-control" name='message' id="FormMessage" value={formData.message} onChange={handleInputChange}
+                                style={{ backgroundColor: "transparent", color: "whitesmoke" }} rows="5"></textarea>
                         </div>
                         <div className="d-grid gap-2 mt-4">
-                            <button className="btn btn-outline-info" type="button">Send</button>
+                            <button className="btn btn-outline-info">Send</button>
                         </div>
                     </form>
                 </div>
