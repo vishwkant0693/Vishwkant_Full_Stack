@@ -170,11 +170,11 @@ body {
 
 .revealmainleft {
   overflow: hidden;
-  animation: slidein 1.5s ease-in;
+  animation: slidein 1.2s ease-in;
 }
 @keyframes slidein {
   0%{
-    transform: translateX(-80px);
+    transform: translateX(-100px);
     opacity: 0;
   }
   100%{
@@ -185,11 +185,11 @@ body {
 
 .revealmainright {
   overflow-x: hidden;
-  animation: slideinr 1.5s ease-in;
+  animation: slideinr 1.2s ease-in;
 }
 @keyframes slideinr {
   0%{
-    transform: translateX(80px);
+    transform: translateX(100px);
     opacity: 0;
   }
   100%{
@@ -200,11 +200,11 @@ body {
 
 .revealmainbottom {
   overflow: hidden;
-  animation: slideinb 1.5s ease-in;
+  animation: slideinb 1.2s ease-in;
 }
 @keyframes slideinb {
   0%{
-    transform: translateY(80px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100%{
