@@ -174,7 +174,7 @@ body {
 }
 @keyframes slidein {
   0%{
-    transform: translateX(-200px);
+    transform: translateX(-80px);
     opacity: 0;
   }
   100%{
@@ -189,7 +189,7 @@ body {
 }
 @keyframes slideinr {
   0%{
-    transform: translateX(200px);
+    transform: translateX(80px);
     opacity: 0;
   }
   100%{
@@ -204,7 +204,7 @@ body {
 }
 @keyframes slideinb {
   0%{
-    transform: translateY(100px);
+    transform: translateY(80px);
     opacity: 0;
   }
   100%{
