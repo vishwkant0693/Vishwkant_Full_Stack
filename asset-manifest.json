@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Vishwkant_Full_Stack/static/css/main.e38129fc.css",
-    "main.js": "/Vishwkant_Full_Stack/static/js/main.2723be2a.js",
+    "main.js": "/Vishwkant_Full_Stack/static/js/main.8abac7a0.js",
     "static/js/787.b3a6b062.chunk.js": "/Vishwkant_Full_Stack/static/js/787.b3a6b062.chunk.js",
     "index.html": "/Vishwkant_Full_Stack/index.html",
     "main.e38129fc.css.map": "/Vishwkant_Full_Stack/static/css/main.e38129fc.css.map",
-    "main.2723be2a.js.map": "/Vishwkant_Full_Stack/static/js/main.2723be2a.js.map",
+    "main.8abac7a0.js.map": "/Vishwkant_Full_Stack/static/js/main.8abac7a0.js.map",
     "787.b3a6b062.chunk.js.map": "/Vishwkant_Full_Stack/static/js/787.b3a6b062.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e38129fc.css",
-    "static/js/main.2723be2a.js"
+    "static/js/main.8abac7a0.js"
   ]
 }
