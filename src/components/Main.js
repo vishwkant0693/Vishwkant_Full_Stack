@@ -75,7 +75,7 @@ const Main = () => {
                 position: 'fixed',
                 top: '0',
                 width: '100%',
-                color:'white',
+                color: 'white',
                 padding: '20px 0',
                 zIndex: '1000',
                 transform: visible ? 'translateY(0)' : 'translateY(-100%)',
@@ -192,6 +192,12 @@ const Main = () => {
             <section className="section">
                 <h2 className="text-center mb-5">Qualification</h2>
                 <div className="container mt-5">
+                    <h4 className="col-md-12 mt-4">Python Full Stack <i className='bx bxs-school'></i></h4>
+                    <h5 className="row">
+                        <div className="qual-title col-md-6">DUCAT Pitampura</div>
+                        <div className="qual-year col-md-6">2022-2023</div>
+                        <hr style={{ textAlign: "center" }} />
+                    </h5>
                     <h4 className="col-md-12 mt-4">Graduation<i className='bx bxs-graduation'></i></h4>
                     <h5 className="row qual">
                         <div className="qual-title col-md-6">B.tech (Mechatronics) - DITE OKHLA PHASE - II, DELHI [IP University]
@@ -222,7 +228,28 @@ const Main = () => {
                 <div className="container">
                     <div className="row projects_box my-5 reveal">
                         <div className="col-md-9">
-                            <h4>NewsApp - ReactJs</h4>
+                            <h4>Knight Notes App - ReactJS, NodeJS</h4>
+                            <p><span style={{ color: 'crimson' }}>Knight Notes App :</span> Your digital platform for organizing, capturing, and sharing your thoughts effortlessly.
+                                 We understand the importance of keeping your ideas, inspirations, and to-dos organized in one accessible place. Whether you're a student, professional, creative thinker, or simply someone who loves jotting down ideas, our platform is designed to empower you to capture and curate your notes seamlessly.</p>
+                            <a href="https://github.com/vishwkant0693/knight"><i className='bx bx-code-alt'></i>Code</a>
+                        </div>
+                        <div className="col-md-3"
+                            style={{ background: "url(images/knight.png)", backgroundSize: "cover", borderRadius: "10px", boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)" }}>
+                        </div>
+                    </div>
+                    <div className="row projects_box my-5 reveal">
+                        <div className="col-md-3"
+                            style={{ background: "url(images/chart.png)", backgroundSize: "cover", borderRadius: "10px", boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)" }}>
+                        </div>
+                        <div className="col-md-9">
+                            <h4>Admin Panel - React JS, ChartJS</h4>
+                            <p><span style={{ color: 'crimson' }}>Admin Panel :</span> In an admin panel, Chart.js serves as a powerful tool for visualizing data and providing insights into various metrics and trends. Here's a description highlighting its key aspects: Data Visualization, Interactive Charts, Customization Options, Responsive Design.</p>
+                            <a href="https://github.com/vishwkant0693/rqchart"><i className='bx bx-code-alt'></i>Code</a>
+                        </div>
+                    </div>
+                    <div className="row projects_box my-5 reveal">
+                        <div className="col-md-9">
+                            <h4>NewsApp - ReactJs, API</h4>
                             <p><span style={{ color: 'crimson' }}>NewsApp :</span> It is a ReactJS web application that fetches and
                                 displays real-time news data using APIs. It
                                 provides a user-friendly interface for browsing and staying updated with the latest news from
@@ -239,7 +266,7 @@ const Main = () => {
                             style={{ background: "url(images/chatapp1.png)", backgroundSize: "cover", borderRadius: "10px", boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)" }}>
                         </div>
                         <div className="col-md-9">
-                            <h4>ChatApp</h4>
+                            <h4>ChatApp - NodeJS</h4>
                             <p><span style={{ color: 'crimson' }}>ChatApp :</span> Build a feature-rich chat app using Node.js with Express.js for server-side management. Employ
                                 Axios for efficient external API interactions, and integrate ChatEngine.io for real-time
                                 messaging. Enhance data storage and retrieval with a RESTful server, enabling seamless chat
@@ -249,7 +276,7 @@ const Main = () => {
                     </div>
                     <div className="row projects_box my-5 reveal">
                         <div className="col-md-9">
-                            <h4>FabWallpaper - ReactJs</h4>
+                            <h4>FabWallpaper - ReactJS, JSON API</h4>
                             <p><span style={{ color: 'crimson' }}>FabWallpaper :</span> ReactJS app leverages Json/APIs to deliver a
                                 visually captivating experience. It allows
                                 users to access a vast library of high-quality wallpapers, dynamically updating with fresh
@@ -343,17 +370,17 @@ const Main = () => {
                         <div className="mb-3">
                             <label htmlFor="FormControlInput1" className="form-label">Full Name</label>
                             <input type="fullname" name='fullname' className="form-control" value={formData.fullname} onChange={handleInputChange}
-                                style={{background:'rgb(25, 25, 29)',color:'white'}} id="FormInput1" />
+                                style={{ background: 'rgb(25, 25, 29)', color: 'white' }} id="FormInput1" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="FormControlInput2" className="form-label">Email address</label>
                             <input type="email" name='email' className="form-control" value={formData.email} onChange={handleInputChange}
-                                style={{background:'rgb(25, 25, 29)',color:'white'}} id="FormInput2" />
+                                style={{ background: 'rgb(25, 25, 29)', color: 'white' }} id="FormInput2" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
                             <textarea className="form-control" name='message' id="FormMessage" value={formData.message} onChange={handleInputChange}
-                                style={{background:'rgb(25, 25, 29)',color:'white'}} rows="5"></textarea>
+                                style={{ background: 'rgb(25, 25, 29)', color: 'white' }} rows="5"></textarea>
                         </div>
                         <div className="d-grid gap-2 mt-4">
                             <button className="btn btn-outline-info">Send</button>
